@@ -8,16 +8,17 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url("./currency.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    background-position: center;
     font-family: 'Montserrat', sans-serif;
-}
-
+    background-color: rgba(255, 255, 255, 0.9);
+} 
 .container
 {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    min-height: 52vh;
     width: 25%;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -79,7 +80,7 @@ form input
 {
     font-size: 15px;
     text-align: center;
-    background: linear-gradient(-225deg, #b8d3fc 0%, #bcddfe 48%, #a6d4fc 100%);
+    border: 1px solid lightgray;
     height: 35px;
     width: 100%;
     display: flex;
@@ -94,12 +95,14 @@ form input
     padding: 10px;
     margin-top: 5px;
     font-size: 17px;
-    background: linear-gradient(-225deg, #5D9FFF 0%, #84bffa 48%, #6BBBFF 100%);
+    background: linear-gradient(-225deg, #29288f 0%, #1f1d83 48%);
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    color: #fff;
 }
-.convert button:hover {
-    background: linear-gradient(-225deg, #3385ff 0%, #76b9fc 48%, #1791fd 100%);
+.convert button:hover
+{
+    background: linear-gradient(-225deg, #2a3053 0%, #252957 48%);
 }
 .exchange button:hover {
     background-color: rgb(230, 230, 230); 
@@ -108,7 +111,6 @@ form input
 {
     .container
     {
-        min-height: 55vh;
         width: 30%;
     }
 }
@@ -116,7 +118,6 @@ form input
 {
     .container
     {
-        min-height: 55vh;
         width: 37%;
     }
     .result
@@ -128,7 +129,6 @@ form input
 {
     .container
     {
-        min-height: 55vh;
         width: 43%;
     }
     .container h2
@@ -148,7 +148,6 @@ form input
 {
     .container
     {
-        min-height: 55vh;
         width: 52%;
     }
     .result
@@ -160,7 +159,6 @@ form input
 {
     .container
     {
-        min-height: 55vh;
         width: 56%;
     }
     .select-container
@@ -174,5 +172,16 @@ form input
     .select-container img
     {
         padding: 0 3px;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .container
+    {
+        width: 69%;
+    }
+    .result
+    {
+        font-size: 10px;
     }
 }
